@@ -41,8 +41,8 @@
  
  #info {
      background-color: #2020201c;
-     padding-top: 80px;
-     padding-bottom: 50px;
+     padding-top: 50px;
+     padding-bottom: 20px;
      font-family: 'Montserrat', sans-serif;
  }
  
@@ -57,10 +57,19 @@
      flex-direction: column;
  }
  
- .cards {
+ .row {
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
+ }
+ 
+ .col {
+     flex: 1;
+ }
+ 
+ .row a {
+     text-decoration: none;
+     color: inherit;
  }
  
  .card {
@@ -68,50 +77,29 @@
      height: 250px;
      max-width: 250px;
      max-height: 250px;
-     background-color: rgb(250, 250, 250);
      border-radius: 5px;
      box-shadow: 0px 0px 15px #4d4c4c4d;
-     margin: 20px;
+     margin: auto;
+     margin-bottom: 10px;
      padding: 20px;
  }
  
- .cards a {
-     text-decoration: none;
-     color: inherit;
- }
- 
- .card:hover,
- .card1:hover,
- .card2:hover {
+ .card:hover {
      box-shadow: 0px 0px 30px #4d4c4ca2;
+     background-color: rgb(248, 243, 237);
  }
  
- .card1,
- .card2 {
-     width: 290px;
-     height: 290px;
-     max-width: 290px;
-     max-height: 290px;
-     margin: 20px;
-     border-radius: 5px;
-     box-shadow: 0px 0px 15px #4d4c4c4d;
- }
- 
- .card1 {
+ .img1 {
      background-image: url('../img/card-img.png');
  }
  
- .card2 {
+ .img2 {
      background-image: url('../img/card-img2.png');
  }
  
  .cardText {
      font-size: 14px;
      padding-top: 10px;
- }
- 
- .p-0 {
-     padding: 0px;
  }
  
  .table {
@@ -189,10 +177,10 @@
          text-align: center;
          font-size: 25px;
      }
-     .card2 {
+     .display-none {
          display: none;
      }
-     .card1 {
+     .oder1 {
          order: 2;
      }
      .tesla img {
@@ -204,10 +192,10 @@
  }
  
  @media (min-width:600px) and (max-width:990px) {
-     .card2 {
+     .order2 {
          order: 2;
      }
-     .card1 {
+     .order1 {
          order: 1;
      }
  }
